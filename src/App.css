@@ -1,0 +1,103 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color:antiquewhite;
+}
+
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:0;
+  background:darkcyan;
+  width:15%;
+  height:100vh;
+}
+
+h1{
+  text-align:center;
+}
+
+.map{
+  margin-left:200px;
+  display:grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding-left:5%;
+  grid-gap:20px;
+  line-height:0.4em;
+}
+
+.item{
+  background:darkcyan;
+  width:300px;
+  font-weight:bold;
+  padding:10px;
+  box-shadow:5px 5px 5px darkcyan;
+  border-style:groove;
+  border-radius:3px;
+}
+
+.item span{
+  visibility: hidden;
+}
+
+.item:hover span{
+  visibility: visible;
+}
+
+.sidebar h3{
+  text-align:center;
+  font-size:1.5em;
+}
+
+.sidebar ul li{
+  font-size:1.1em;
+  font-weight:bold;
+  list-style-type:square;
+  margin:100px 0;
+  padding:0;
+}
+
+.sidebar ul li:hover{
+  color:antiquewhite;
+  cursor:pointer;
+  transition:0.35s;
+  margin-left:5px;
+}
+
+.form{
+  background:darkcyan;
+  width:40%;
+  height:450px;
+  margin:auto;
+  padding:40px;
+  line-height:50px;
+  margin-top:5%;
+  border-radius:5px;
+  box-shadow:5px 5px 5px darkcyan;
+  border-style:groove;
+}
+
+input, label{
+  width: 50%;
+  font-weight:bold;
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form button {
+  margin-top:20px;
+  line-height:20px;
+  width:150px;
+  border-radius:3px;
+  cursor:pointer;
+}
+
+.form button:hover{
+  transition:0.35s;
+  background:black;
+  color:antiquewhite;
+}
